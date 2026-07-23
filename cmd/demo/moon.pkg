@@ -1,0 +1,5 @@
+import {
+  "moonbit_textkit/seqkit/src" @seqkit,
+}
+
+pkgtype(kind: "executable")
