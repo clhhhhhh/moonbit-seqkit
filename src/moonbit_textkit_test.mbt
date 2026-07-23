@@ -62,3 +62,28 @@ test "prime" {
 test "search" {
   debug_inspect(binary_search([1, 3, 5], 3), content="true")
 }
+
+///|
+test "window sum" {
+  debug_inspect(window_sum([1, 2, 3, 4], 3), content="[6, 9]")
+}
+
+///|
+test "window range" {
+  debug_inspect(window_range([1, 5, 3, 8], 2), content="[4, 2, 5]")
+}
+
+///|
+test "window mean" {
+  debug_inspect(window_mean([2, 4, 6, 8], 2), content="[3, 5, 7]")
+}
+
+///|
+test "power sum" {
+  debug_inspect(power_sum_2([1, 2, 3]), content="14")
+}
+
+///|
+test "bucket counts" {
+  debug_inspect(bucket_counts([0, 1, 2, 5, 9], 3, 4), content="[3, 1, 0, 1]")
+}
