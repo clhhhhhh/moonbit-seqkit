@@ -1,5 +1,7 @@
 # moonbit-seqkit
 
+[![MoonBit checks](https://github.com/clhhhhhh/moonbit-seqkit/actions/workflows/check.yml/badge.svg)](https://github.com/clhhhhhh/moonbit-seqkit/actions/workflows/check.yml)
+
 `moonbit-seqkit` 是一个零依赖的 MoonBit 数值序列分析库，面向命令行工具、教学数据处理和轻量遥测聚合。它提供统计量、搜索、排序、窗口变换和基础数论工具，API 小而直接。
 
 ## 目标与边界
