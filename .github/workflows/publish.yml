@@ -1,0 +1,16 @@
+name: Publish Mooncake
+on:
+  release:
+    types: [published]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: moonbitlang/setup@v0.1
+      - run: moon check --deny-warn
+      - run: moon test --deny-warn
+      - run: moon package --list
+      - run: moon publish
+        env:
+          MOONCAKES_TOKEN: ${{ secrets.MOONCAKES_TOKEN }}
