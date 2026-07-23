@@ -7,7 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: moonbitlang/setup@v0.1
+      - name: Install MoonBit
+        shell: bash
+        run: curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
+      - name: Add MoonBit to PATH
+        shell: bash
+        run: echo "$HOME/.moon/bin" >> "$GITHUB_PATH"
       - run: moon check --deny-warn
       - run: moon test --deny-warn
       - run: moon package --list
