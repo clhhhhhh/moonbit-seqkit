@@ -4,7 +4,7 @@ version = "0.1.0"
 
 readme = "README.md"
 
-repository = "https://github.com/REPLACE_ME/moonbit-seqkit"
+repository = "https://github.com/clhhhhhh/moonbit-seqkit"
 
 license = "MIT"
 
