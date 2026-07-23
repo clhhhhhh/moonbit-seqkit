@@ -14,7 +14,7 @@
 ## 安装
 
 ```bash
-moon add moonbit_textkit/seqkit@0.1.0
+moon add clhhhhhh/moonbit-seqkit@0.1.0
 ```
 
 ## 使用
